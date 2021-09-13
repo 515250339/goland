@@ -14,11 +14,11 @@
 package main
 
 import (
-    "fmt"
+	"fmt"
 )
 
-func main(){
-    	fmt.Print("输出到控制台不换行")
+func main() {
+	fmt.Print("输出到控制台不换行")
 	fmt.Println("---")
 	fmt.Println("输出到控制台并换行")
 	fmt.Printf("name=%s,age=%d\n", "Tom", 30)

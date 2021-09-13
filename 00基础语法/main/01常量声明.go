@@ -21,7 +21,7 @@
 
 **整型**
 
-`int8` `uint8` 
+`int8` `uint8`
 
 `int16` `uint16`
 
@@ -56,28 +56,28 @@
 第二种：const 变量名称,变量名称 ...  = 变量值,变量值 ...
 */
 
-
 // 代码实例
 package main
 
-
 import (
-    "fmt"
+	"fmt"
 )
 
+func main() {
+	// 创建常量 指定 string 类型
+	const name string = "Tom"
+	fmt.Println(name)
 
-func main(){
-    const name string = "Tom"
-    fmt.Println(name)
+	// 创建常量 指定 int 类型
+	const age = 30
+	fmt.Println(age)
 
-    const age = 30
-    fmt.Println(age)
+	// 创建多个常量 指定 string 类型
+	const name_1, name_2 string = "Tom", "Jay"
+	fmt.Println(name_1, name_2)
 
-    const name_1, name_2 string = "Tom", "Jay"
-    fmt.Println(name_1, name_2)
-
-    const name_3, age_1 = "TTTT", 50
-    fmt.Println(name_3, age_1)
+	// 创建多个常量 选择合适 value 的类型
+	const name_3, age_1 = "TTTT", 50
+	fmt.Println(name_3, age_1)
 
 }
-
